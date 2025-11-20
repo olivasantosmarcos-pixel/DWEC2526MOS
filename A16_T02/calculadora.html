@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora Básica</title>
+    <link rel="stylesheet" href="calculadora.css">
+</head>
+<body>
+
+    <h2>Calculadora Básica</h2>
+
+    <label>Número 1: </label>
+    <input type="number" id="num1">
+
+    <label>Número 2: </label>
+    <input type="number" id="num2">
+
+    <label>Operación:</label>
+    <select id="operacion">
+        <option value="sumar">Sumar</option>
+        <option value="restar">Restar</option>
+        <option value="multiplicar">Multiplicar</option>
+        <option value="dividir">Dividir</option>
+    </select>
+
+    <button onclick="calcular()">Calcular</button>
+
+    <p id="resultado" class="resultado"></p>
+    <p><strong>Operaciones realizadas:</strong> <span id="contador">0</span></p>
+
+    <h3>Historial de operaciones:</h3>
+    <div id="historial"></div>
+
+    <button onclick="limpiarHistorial()">Limpiar historial</button>
+
+    <script src="calculadora.js"></script>
+</body>
+</html>

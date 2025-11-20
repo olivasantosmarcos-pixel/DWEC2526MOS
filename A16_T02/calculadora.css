@@ -1,0 +1,25 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 30px;
+    transition: background-color 0.8s ease;
+}
+
+.resultado {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#historial {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 400px;
+    min-height: 80px;
+}
+
+button {
+    padding: 8px 14px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+}
