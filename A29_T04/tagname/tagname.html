@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>getElementsByTagName</title>
+
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    li {
+      padding: 6px;
+      margin: 4px 0;
+      background: #e8e8e8;
+      border-radius: 4px;
+      transition: 0.3s;
+    }
+  </style>
+
+</head>
+<body>
+
+  <ul>
+    <li>Elemento A</li>
+    <li>Elemento B</li>
+    <li>Elemento C</li>
+  </ul>
+
+  <script>
+    const items = document.getElementsByTagName("li");
+    items[2].style.backgroundColor = "yellow";
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>getElementsByClassName</title>
+
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    .parrafo {
+      padding: 8px;
+      margin: 5px 0;
+      background: #f0f0f0;
+      border-left: 4px solid #999;
+      transition: 0.3s;
+    }
+  </style>
+
+</head>
+<body>
+
+  <p class="parrafo">Párrafo 1</p>
+  <p class="parrafo">Párrafo 2</p>
+
+  <script>
+    const elementos = document.getElementsByClassName("parrafo");
+    elementos[0].style.fontWeight = "bold";
+    elementos[1].style.color = "blue";
+  </script>
+
+</body>
+</html>
